@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --header: #3A5A40;
+  --section-bg: radial-gradient(ellipse at center, #e8e8e8 0%, #c0c0c0 100%);
+  --pale-bg: #fafaf6;
+  --orange-button: #b5672a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-header: var(--header);
+  --color-pale: var(--pale-bg);
+  --color-orange-btn: var(--orange-button);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* overall cal container */
+.react-calendar {
+  border: 1px solid #e7e5e4;
+  border-radius: 8px;
+  font-family: inherit;
+  background: white;
+  padding: 16px;
+  width: 800px;
+  max-width: 100%;
+}
+
+/* top nav bar (month/year & label buttons) */
+.react-calendar__navigation {
+  margin-bottom: 12px;
+}
+
+/* month/year buttons */
+.react-calendar__navigation__label {
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1c2b1e;
+}
+
+/* nav arrows */
+.react-calendar__navigation__arrow {
+  color: #3A5A40;
+  font-size: 1.2rem;
+}
+
+/* hover state on nav buttons */
+.react-calendar__navigation button:hover {
+  background: #f5f2ed;
+  border-radius: 6px;
+}
+
+/* day-of-week headers */
+.react-calendar__month-view__weekdays__weekday {
+  color: #78716c;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* remove default underline from weekday abbreviations */
+.react-calendar__month-view__weekdays__weekday abbr {
+  text-decoration: none;
+}
+
+/* each date tile */
+.react-calendar__tile {
+  color: #1c2b1e;
+  border-radius: 6px;
+  padding: 10px 6px;
+}
+
+/* hover & focus on available dates */
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background: #f5f2ea !important;
+}
+
+
+/* change weekend text color */
+.react-calendar__month-view__days__day--weekend {
+  color: var(--header) !important;
+}
+
+/* disabled titles both past-dates and booked dates + specification to ensure unavail. weekend dates are included in color change */
+.react-calendar__tile:disabled,
+.react-calendar__tile:disabled.react-calendar__month-view__days__day--weekend {
+  background: white !important;
+  color: #c4b9ae !important;
+  cursor: not-allowed;
+}
+
+/* current date */
+.react-calendar__tile--now {
+  background: #f5f2ed !important;
+  color: #333 !important;
+  font-weight: 600;
+}
+
+/* selected date (todo: enable date selection to transfer to form) */
+.react-calendar__tile--active {
+  background: #3A5A40 !important;
+  color: white !important;
+}
+
+.custom-calendar-container .react-calendar.react-calendar {
+  width: 100% !important;
+  max-width: none;
+  height: auto;
+}
+
+.custom-calendar-container .react-calendar__tile {
+  height: 60px; /* cal height */
+}
