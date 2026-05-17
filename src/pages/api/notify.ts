@@ -9,7 +9,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     if (incomingSecret !== process.env.WEBHOOK_SECRET) {
         return res.status(401).json({ message: "Unauthorized!" });
     }
-    // 1. Security: Only allow POST requests from Supabase
+    // only allow post requests to supabase
     if (req.method !== 'POST') {
     return res.status(405).json({ message: 'Method not allowed' });
   }
@@ -20,7 +20,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     const response = await resend.emails.send({
       from: 'Brookshire Basecamp <bookings@boonervsite.com>',
-      to: ['maxwellbrown.dev@gmail.com'], // Must be exactly your Resend login email
+      to: [process.env.RESEND_EMAIL || ''],
       subject: `New Booking Request: ${first_name} ${last_name}`,
       html: `<p>New Request from ${first_name}</p>`,
     });

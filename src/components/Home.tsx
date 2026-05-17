@@ -20,7 +20,7 @@ export default function Home() {
         background: 'linear-gradient(to bottom, #9a9a8e 0%, #b8b8aa 20%, #d0cfc4 45%, #d0cfc4 55%, #b8b8aa 80%, #9a9a8e 100%)',
       }}
     >
-      <p className="text-xs tracking-[0.25em] uppercase text-stone-600 mb-6">
+      <p className="text-xs tracking-[0.25em] uppercase text-stone-600 mb-6 sm:hidden">
         Boone, NC · Watauga County · High Country
       </p>
 

@@ -90,7 +90,7 @@ export default function BookingForm() {
     return (
       <section id="book" className="py-24 px-6" style={{ background: '#f5f2ed' }}>
         <div className="max-w-2xl mx-auto bg-white p-12 text-center">
-          <div className="text-4xl mb-4">🌲</div>
+          {/*<div className="text-4xl mb-4">🌲</div>*/}
           <h3 className="font-serif text-2xl text-stone-800 mb-4">Request Received!</h3>
           <p className="text-stone-600 leading-relaxed">
             Thanks for reaching out. We&apos;ll review your request and get back to you
