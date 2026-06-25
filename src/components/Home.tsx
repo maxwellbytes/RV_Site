@@ -6,7 +6,7 @@ export default function Home() {
   const badges = [
     {label: 'Full Hookups'},
     {label: 'Creekside'},
-    {label: '¾-Acre Private Lot'},
+    {label: '¾-Acre Lot'},
     {label: 'Groups Welcome'},
     {label: '11 min to Blue Ridge Parkway'},
   ]
@@ -34,7 +34,7 @@ export default function Home() {
         className="font-serif italic text-center mb-6 drop-shadow"
         style={{fontSize: 'clamp(1.5rem, 4vw, 2.8rem)', color: '#c9b97a', lineHeight: 1.2,}}
       >
-        Near the Blue Ridge Parkway
+        RV Site Rental
       </h2>
 
       <p className="text-center text-white/80 max-w-md mb-10 text-sm leading-relaxed drop-shadow px-4">

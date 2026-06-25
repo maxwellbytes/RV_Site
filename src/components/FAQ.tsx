@@ -18,10 +18,10 @@ const faqs: FAQItem[] = [
       'The gravel pad is 60 feet long, but the site is best accessed by rigs 30 feet or shorter due to the spur road. To back into the site, vehicles must travel up the road and turn around at a quiet 4-way intersection. Boone doesn\'t have much flat land and this site requires backing into it from a slanted road. The site comfortably fits one RV or up to three camper vans from the same group. Contact us if you\'re unsure whether your rig is a good fit',
   },
   {
-    question: 'Is the site truly private — will I share it with other guests?',
+    question: 'Is the site truly private? Will I share it with other guests?',
     answer:
       <>
-      The Brookshire Basecamp is a single-site rental. When you book, your group is the only one on-site. Being this close to Boone, this site is not completely wooded and there is a neighboring house close by 
+      The Brookshire Basecamp is a single-site rental. When you book, your group is the only one on-site. Being this close to Boone, this site is not completely wooded and there is a neighboring house close by but there is a privacy fence in-between
       <a href="/#photos" className="text-green-700 hover:text-header no-underline"> (see photos)</a>.
       </>
   },
@@ -38,7 +38,44 @@ const faqs: FAQItem[] = [
   {
     question: 'Is there cell service and internet access on-site?',
     answer:
-      'Yes — the High Country has reliable cellular coverage from major carriers. There is no on-site WiFi, but most guests find the service sufficient for work and streaming',
+      'Yes — he High Country has reliable cellular coverage from major carriers and there is an on-site WiFi internet connection',
+  },
+  {
+    question: "Are trash bins or recycling available on site?",
+    answer: "Trash bins are not available on site because of their attraction of wildlife. We ask that you keep all trash indoors. Watuaga County has a trash transfer station at Landfill Rd which is within two miles away from this site"
+  },
+  {
+    question: "What are the site rules?",
+    answer: 
+      <>
+        <ul className="list-disc pl-4 gap-y-2 flex flex-col">
+          <li>
+            Have fun and relax!
+          </li>
+          <li>
+            Keep all trash and unattended food inside. There are many harmless wild animals around this site.
+          </li>
+          <li>
+            Be respectful of the neighbors.
+          </li>
+          <li>
+            Quiet hours are from 10PM until 8AM.
+          </li>
+          <li>
+            Dogs to be kept on a leash to prevent them from harassing the wildlife.
+          </li>
+          <li>
+            Please wear shoes on the grass. We cleaned upthis site as best as possible but there was some broken glass on the site 
+            prior to cleanup. Some broken glass may still be present.
+          </li>
+          <li>
+            Consider resource use: Utilize the cool breeze versus an AC unit. Conserve water when possible.
+          </li>
+          <li>
+            Pick up all trash and remove from the site upon check out. A $50 fee will be charged if we have to remove trash from the site.
+          </li>
+        </ul>
+      </>
   },
 ]
 

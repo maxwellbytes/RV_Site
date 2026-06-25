@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   reactCompiler: true,
   reactStrictMode: true,
   allowedDevOrigins: ['puzzledly-intersocial-jazlyn.ngrok-free.dev'],
+  devIndicators: false,
 };
 
 export default nextConfig;

@@ -29,7 +29,7 @@ export default function Footer() {
 
       <p className="text-white/70 text-sm mb-3">
         <span className="font-semibold text-white">Brookshire Basecamp</span>
-        {' '}— Private RV &amp; Camper Van Site · Boone, NC · Watauga County
+        {' '}— RV &amp; Camper Van Site · Boone, NC · Watauga County
       </p>
 
       <p className="text-white/40 text-xs mb-8">

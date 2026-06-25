@@ -32,12 +32,16 @@ export default function About() {
             in the Western North Carolina mountains.
           </p>
           <p>
-            This is a single-site rental - meaning your group has the site to yourselves. The
-            gravel pad offers a stable, level surface on a quiet, low-traffic spur road. There
-            is a 8&apos; x 16&apos; wooden deck to give you a level space to relax, eat meals, and
-            socialize from sunrise to sunset. As much as we would have loved this to be
-            on a completely wooded lot, to be this close to downtown Boone there is a
-            neighboring house next door - RV parking near Boone, NC at its best.
+            This is a single-site rental - meaning your group has the site to yourselves. The gravel pad offers a stable, 
+            level surface on a quiet, low-traffic spur road. There is a 8&apos; x 16&apos; wooden deck to give you a level space to relax, eat meals, and
+            socialize from sunrise to sunset. As much as we would have loved this to be on a completely wooded lot, to be this close to downtown Boone
+            there is a neighboring house next door but we have built a privacy fence in-between
+          </p>
+          <p>
+            This RV site rental offers WiFi internet, 30A/50A Electric, Well Water, and 4” Septic Connection.
+          </p>
+          <p>
+            This may be a RV parking site rental near Boone, NC at its best.
           </p>
         </div>
 
