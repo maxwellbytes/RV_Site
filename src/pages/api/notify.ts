@@ -13,12 +13,21 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
   try {
     const { record } = req.body;
-    const { first_name, last_name, start_date, end_date, email, message } = record;
+    const { first_name, last_name, start_date, end_date, phone_number, email, message, rig_type, stay_type } = record;
     const response = await resend.emails.send({
       from: 'Brookshire Basecamp <bookings@boonervsite.com>',
       to: [process.env.RESEND_EMAIL || ''],
       subject: `New Booking Request: ${first_name} ${last_name}`,
-      html: `<p>New Request from ${first_name}</p>`,
+      html: `
+      <p>New Request from ${first_name} ${last_name}</p>
+      <p>Arrival Date: ${start_date}</p>
+      <p>Checkout Date: ${end_date}</p>
+      <p>Email: ${email}</p>
+      <p>Phone Number: ${phone_number ?? 'Not provided'}</p>
+      <p>Message: ${message ?? 'Not provided'}</p>
+      <p>Rig Type: ${rig_type}
+      <p>Stay Type: ${stay_type}
+      `,
     });
     if (response.error) {
       console.error("Resend API Error:", response.error);
