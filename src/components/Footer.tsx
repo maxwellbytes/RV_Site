@@ -26,10 +26,10 @@ export default function Footer() {
           </Link>
         ))}
       </div>
-
+/*{' '} in from of dot RV &amp; */
       <p className="text-white/70 text-sm mb-3">
         <span className="font-semibold text-white">Brookshire Basecamp</span>
-        {' '}— RV &amp; Camper Van Site · Boone, NC · Watauga County
+        · Boone, NC RV &amp; Park And Camper Van Site · Watauga County
       </p>
 
       <p className="text-white/40 text-xs mb-8">
