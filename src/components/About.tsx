@@ -41,7 +41,7 @@ export default function About() {
             This RV site rental offers WiFi internet, 30A/50A Electric, Well Water, and 4” Septic Connection.
           </p>
           <p>
-            This may be a RV parking site rental near Boone, NC at its best.
+            This may be a RV rental near Boone, NC at its best.
           </p>
         </div>
 

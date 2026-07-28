@@ -73,7 +73,7 @@ export default function Photos() {
           className="font-serif font-bold text-white mb-12"
           style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)' }}
         >
-          See Brookshire Basecamp
+          See Boone Brookshire Basecamp
         </h2>
 
         {/* container for carousel -> use relative positioning so arrows go over top */}

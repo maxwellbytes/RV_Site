@@ -7,6 +7,8 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
     <Head>
       <link rel="icon" href="/favicon.svg" />
+      <title>Boone NC RV Site Rental | Full Hookups | Brookshire Basecamp</title>
+      <meta content="Private full-hookup RV site rental in Boone, NC. Creekside, 3/4-acre lot near downtown and Blue Ridge Parkway. Nightly, weekly & monthly. Book today" />
     </Head>
     <Component {...pageProps} />
     </>
