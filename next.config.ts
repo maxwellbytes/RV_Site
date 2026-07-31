@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   allowedDevOrigins: ['puzzledly-intersocial-jazlyn.ngrok-free.dev'],
   devIndicators: false,
+  images: {
+    contentDispositionType: "inline"
+  }
 };
 
 export default nextConfig;

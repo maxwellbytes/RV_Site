@@ -38,10 +38,7 @@ export default function About() {
             there is a neighboring house next door but we have built a privacy fence in-between
           </p>
           <p>
-            This RV site rental offers WiFi internet, 30A/50A Electric, Well Water, and 4” Septic Connection.
-          </p>
-          <p>
-            This may be a RV rental near Boone, NC at its best.
+            This RV site rental offers WiFi internet, 30A/50A electric, well water, and 4” septic connection. It's everything you need for a comfortable stay in the Appalachian Mountains.
           </p>
         </div>
 

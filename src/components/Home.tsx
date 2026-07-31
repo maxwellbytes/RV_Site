@@ -49,7 +49,7 @@ export default function Home() {
         {badges.map((badge) => (
           <span
             key={badge.label}
-            className="flex items-center gap-2 px-2 bg-header/70 md:px-4 py-1 md:py-2 rounded-full border border-[#3b5c40] text-white text-sm backdrop-blur-sm"
+            className="flex items-center gap-2 bg-header/70 md:px-4 md:py-2 rounded-full border border-[#3b5c40] text-white text-sm backdrop-blur-sm my-1"
             
           >
             {badge.label}
@@ -60,8 +60,7 @@ export default function Home() {
       <div className="flex flex-wrap gap-4 justify-center px-4">
         <Link
           href="/#availability"
-          className="px-8 py-4 text-sm tracking-widest uppercase font-semibold text-white transition-opacity hover:opacity-90"
-          style={{ background: '#b5672a' }}
+          className="px-8 py-4 text-sm tracking-widest uppercase font-semibold text-white transition-opacity hover:opacity-90 bg-[#b5672a]"
         >
           Check Availability
         </Link>
